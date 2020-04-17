@@ -7,3 +7,9 @@ rsult = array.map(function(x){
   }
 });
 console.log(rsult);
+
+//forEach 
+array = [1,2,3,4,5];
+array.forEach(function(x){
+  return x*2 
+});
