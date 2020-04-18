@@ -29,3 +29,25 @@ button.addEventListener('mouseout', function(){
   button.innerText = "Click me";
 });
 
+
+//using 'this' 
+const colors = ['red', 'orange', 'yellow',
+  'green',
+  'blue',
+  'purple',
+  'indigo',
+  'violet'
+];
+const printColor = function() {
+//'this' is the item that has been clicked
+  console.log(this.style.backgroundColor);
+};
+
+const boxes = document.querySelector('#boxes')
+for(let color of colors){
+  const box = document.createElement('div');
+  box.style.backgroundColor = color;
+  box.classList.add('box');
+  boxes.appendChild(box);
+  box.addEventListener('click', printColor)
+}
