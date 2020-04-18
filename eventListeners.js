@@ -1,4 +1,4 @@
-//onclick //
+/////////////////onclick////////////////////////
 const button = document.querySelector('button');
 button.onclick = function() {
   alert('You clicked');
@@ -10,7 +10,7 @@ button.onclick = function() {
 }           // because onclick property got overwritten
 
 
-//addEventListener
+//////////////addEventListener//////////////////
 const button = document.querySelector('button');
 button.addEventListener('click', function(){
   alert('Clicked once');
@@ -30,7 +30,7 @@ button.addEventListener('mouseout', function(){
 });
 
 
-//using 'this' 
+////////////////using 'this'///////////////////
 const colors = ['red', 'orange', 'yellow',
   'green',
   'blue',
@@ -42,7 +42,6 @@ const printColor = function() {
 //'this' is the item that has been clicked
   console.log(this.style.backgroundColor);
 };
-
 const boxes = document.querySelector('#boxes')
 for(let color of colors){
   const box = document.createElement('div');
