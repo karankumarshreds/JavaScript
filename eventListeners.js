@@ -41,6 +41,7 @@ const colors = ['red', 'orange', 'yellow',
 const printColor = function() {
   //'this' is the item that has been clicked
   //or the element to which eventListener is added to
+  //also, it's automatically passed as an event object
   console.log(this.style.backgroundColor);
 };
 const boxes = document.querySelector('#boxes')
