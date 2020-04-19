@@ -13,6 +13,20 @@ sub.addEventListener('submit', function(e){
 	console.log('veggieSelect', veggieSelector.value);
 })
 
+
+// ######### Get Data Whilst Typing ####### //
+// <input type="text" id="cc" placeholder="credit card">
+const creditCardInput = document.querySelector('#cc');
+inputData = {};
+creditCardInput.addEventListener('input', (e) => {
+	inputData['cc'] = creditCardInput.value;
+	//or
+	inputData['cc'] = e.target.value;
+	console.log(inputData);
+});
+
+
+
 // ################# HTML ################# // 
 
 <!DOCTYPE html>
