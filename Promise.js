@@ -15,3 +15,23 @@ firstPromise.then(() => {
 firstPromise.catch(() => {
 	console.log('rejected');
 })
+
+
+// better way to write // 
+const firstPromise = () => {
+	return new Promise((resolve, reject)=>{
+		const rand = Math.random();
+		if(rand < 0.5){
+			resolve();
+		} else {
+			reject();
+		};
+	});
+};
+firstPromise()
+	.then(() => {
+		console.log('resolved');
+	})
+	.catch(() => {
+		console.log('rejected');
+	});
