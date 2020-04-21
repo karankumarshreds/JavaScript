@@ -26,5 +26,5 @@ fetch('https://swapi.dev/api/planets/1/')
 	//this runs only in case of network failures
 	.catch((err) => {
 		console.log('SOMETHING WENT WRONG WITH FETCH!');
-		console.log(err);
+		console.log(err); 
 	});
